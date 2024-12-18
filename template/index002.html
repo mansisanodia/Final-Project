@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<style>
+		html {
+			font-size: 1rem;
+		}
+
+		@media (min-width: 576px) {
+			html {
+				font-size: 1.25rem;
+			}
+		}
+
+		@media (min-width: 768px) {
+			html {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (min-width: 992px) {
+			html {
+				font-size: 1.75rem;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			html {
+				font-size: 2rem;
+			}
+
+			html {
+				font-size: 1rem;
+			}
+
+			h1 {
+				font-size: 1.2rem;
+			}
+
+			h2 {
+				font-size: 1.1rem;
+			}
+
+			@media (min-width: 768px) {
+				html {
+					font-size: 1.1rem;
+				}
+
+				h1 {
+					font-size: 1.3rem;
+				}
+
+				h2 {
+					font-size: 1.2rem;
+				}
+			}
+
+			@media (min-width: 991px) {
+				html {
+					font-size: 1.2rem;
+				}
+
+				h1 {
+					font-size: 1.5rem;
+				}
+
+				h2 {
+					font-size: 1.4rem;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				html {
+					font-size: 1.2rem;
+				}
+
+				h1 {
+					font-size: 1.7rem;
+				}
+
+				h2 {
+					font-size: 1.6rem;
+				}
+			}
+
+		}
+	</style>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	</body>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+	<!-- bootstrap css -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
+	<!-- custom css -->
+	<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	<!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='static/favicon.png?') }}"> -->
+
+
+	<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+
+
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
+		rel="stylesheet">
+	<!-- //google fonts -->
+
+	<style>
+		header {
+			background-color: rgba(30, 30, 30, 1);
+			margin-top: 0rem;
+			display: block;
+
+		}
+	</style>
+</head>
+
+<body>
+    <title>Precision Agriculture</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+        }
+
+        /* Banner Section */
+        .banner_w3lspvt {
+            position: relative;
+            height: 100vh;
+            background: url('D:/project/project2/static/Screenshot 2024-11-28 235850.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .w3layouts-banner-info {
+            text-align: center;
+        }
+
+        .w3layouts-banner-info h3 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .w3layouts-banner-info h4 {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #eee;
+        }
+
+        .w3layouts-banner-info p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #fff;
+        }
+
+        /* Core Values Section */
+.core-value {
+    padding: 50px 0;
+    background: #f4f7f8;
+    color: #333;
+}
+
+.core-value h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.core-grids {
+    display: flex;
+    align-items: center; /* Align vertically centered */
+    justify-content: space-between; /* Space between image and text */
+    gap: 20px; /* Gap between the columns */
+}
+
+.core-left {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the image */
+}
+
+.core-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.core-right {
+    flex: 1.5;
+    padding: 20px;
+}
+
+.core-right h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.core-right p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .core-grids {
+        flex-direction: column;
+    }
+
+    .core-right {
+        text-align: center;
+        padding: 0;
+    }
+
+    .core-left {
+        margin-bottom: 20px;
+    }
+}
+
+
+        /* Services Section */
+        .blog {
+            padding: 50px 0;
+            background: #f9fbfc;
+        }
+
+        .blog h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .blog-grids {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .blog-grids .blog-left,
+        .blog-grids .blog-middle,
+        .blog-grids .blog-right {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: 33.333%;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .blog-grids .blog-left:hover,
+        .blog-grids .blog-middle:hover,
+        .blog-grids .blog-right:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-grids img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .blog-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .blog-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .core-grids,
+            .blog-grids {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .blog-grids .blog-left,
+            .blog-grids .blog-middle,
+            .blog-grids .blog-right {
+                max-width: 100%;
+                flex: 1 1 100%;
+            }
+
+            .w3layouts-banner-info h3 {
+                font-size: 2.5rem;
+            }
+
+            .w3layouts-banner-info h4 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #002e0f;">
+		<div class="container">
+			<a class="navbar-brand" href="{{ url_for('home') }}">
+				<img src="{{ url_for('static', filename='static/logo.jpg') }}" style="width: 90px; height: 55px" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="D:/project/project2/templates/index002.html">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="D:/project/project2/templates/crop001.html">Crop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="D:/project/project2/templates/fertilizer001.html">Fertilizer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="D:/project/project2/templates/disease001.html">Disease</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Banner Section -->
+    <section class="banner_w3lspvt" id="home">
+        <div class="overlay">
+            <div class="w3layouts-banner-info">
+                <h3>Precision Agriculture</h3>
+                <h4><b>Get informed decisions about your farming strategy.</b></h4>
+                <h4><strong>Here are some questions we'll answer</strong></h4>
+                <p>
+                    1. What crop to plant here? <br>
+                    2. What fertilizer to use? <br>
+                    3. Which disease do your crop have?<br>
+                    4. How to cure the disease?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-value py-5">
+        <div class="container">
+            <h3>About Us</h3>
+            <div class="core-grids">
+                <div class="core-left">
+                    <img src="D:/project/project2/static/ojasprojectcv.jpg" alt="Core Values">
+                </div>
+                <div class="core-right">
+                    <h3>Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase Profit.</h3>
+                    <p>
+                        We use state-of-the-art machine learning and deep learning technologies to help you guide
+                        through the entire farming process. Make informed decisions to understand the demographics of
+                        your area, understand the factors that affect your crop and keep them healthy for a super
+                        awesome successful yield.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="blog py-5">
+        <div class="container">
+            <h3>Our Services</h3>
+            <div class="blog-grids">
+                <div class="blog-left">
+                    <img src="D:/project/project2/static/s2.jpg" alt="Crop Recommendation">
+                    <a href="{{ url_for('crop_page') }}">
+                        <div class="blog-info">
+                            <h4>Crop</h4>
+                            <p>
+                                Recommendation about the type of crops to be cultivated which is best suited for the
+                                respective conditions.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-middle">
+                    <img src="D:/project/project2/static/s3.jpg" alt="Fertilizer Recommendation">
+                    <a href="{{ url_for('fertilizer_page') }}">
+                        <div class="blog-info">
+                            <h4>Fertilizer</h4>
+                            <p>
+                                Recommendation about the type of fertilizer best suited for the particular soil and the
+                                recommended crop.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-right">
+                    <img src="D:/project/project2/static/s4.jpg" alt="Disease Prediction">
+                    <a href="{{ url_for('disease_page') }}">
+                        <div class="blog-info">
+                            <h4>Crop Disease</h4>
+                            <p>
+                                Predicting the name and causes of crop disease and suggestions to cure it.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        footer {
+            background-color: #013220;
+        }
+    </style>
+    <!-- footer -->
+<footer class="text-center py-5">
+    <div class="container py-md-3">
+        <!-- logo -->
+        <h2 class="logo2 text-center">
+            <a href="{{ url_for('home') }}">
+                Precision Agriculture
+            </a>
+        </h2>
+        <!-- //logo -->
+        <!-- address -->
+        <div class="contact-left-footer mt-4">
+            <!-- <a href="community.html">Community</a> -->
+        </div>
+        <div class="w3l-copy text-center">
+            <p class="text-da">An Environmental Intelligence Startup<br> </p>
+        </div>
+        <p class="homelogo">
+        <p>&copy; VIT Bhopal University</p>
+    </div>
+</footer>
+<!-- //footer -->
+
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center"></a>
+	<!-- //move top icon -->
+</body>
+</html>
