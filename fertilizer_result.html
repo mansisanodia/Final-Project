@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='farm_background.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .result-container {
+            background: rgba(14, 13, 13, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .result-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .result-header h2 {
+            color: #28a745;
+        }
+        .advice {
+            background-color: #0f1310;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .modal-content {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="result-container">
+
+            <!-- Display NPK values -->
+            <div>
+                <h4 class="text-warning">Recommended Fertilizer (NPK values):</h4>
+                <ul class="list-unstyled">
+                    <li><strong>Nitrogen (N):</strong> {{ fertilizer[0][0] }}</li>
+                    <li><strong>Phosphorus (P):</strong> {{ fertilizer[0][1] }}</li>
+                    <li><strong>Potassium (K):</strong> {{ fertilizer[0][2] }}</li>
+                </ul>
+            </div>
+
+            <div class="advice">
+                <h4>Fertilizer Advice:</h4>
+                <p>{{ advice|safe }}</p>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#infoModal">More Info</button>
+                <a href="/" class="btn btn-secondary">Go Back</a>
+                <a href="/fert_recommend" class="btn btn-secondary">Make Another Prediction</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Additional Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Here you can provide additional tips or information about the recommended fertilizer, its usage, and benefits.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
